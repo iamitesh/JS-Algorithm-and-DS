@@ -6,7 +6,7 @@ function fibonacchi(n) {
   } else {
     for (let i = 2; i < n; i++) {
       const newMember = fib[i - 1] + fib[i - 2];
-      fib.push(newMember);
+      fib[i] = newMember;
     }
     console.log(`fibonacchi of ${n}: ` + [...fib]);
   }
